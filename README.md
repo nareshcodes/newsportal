@@ -7,11 +7,10 @@ The project is structured into different directories, each representing a module
 Installation
 To install the project, clone this repository to your local machine, and run the following commands:
 
-sh
-Copy code
-cd News-Portal
-npm install
-npm start
+
+cd News-Portal<br>
+npm install<br>
+npm start<br>
 The above commands will install the project dependencies and start the development server. The project can then be accessed by visiting http://localhost:3000 in your web browser.
 
 Contributing
