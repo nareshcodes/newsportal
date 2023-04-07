@@ -1,4 +1,3 @@
-News Portal
 This is a Git repository for a news portal website project. The repository contains the source code, assets, and documentation for the news portal project. The project aims to provide users with up-to-date news from various categories such as politics, sports, entertainment, and technology.
 
 Project Structure
