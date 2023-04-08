@@ -1,3 +1,8 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
 *{
     margin:0;
     padding:0;
@@ -41,7 +46,9 @@ ul li a{
     color:rgb(3, 3, 10);
     transform: scale(2);
 }
-
+.img{
+    transition: all .5s ease-in-out;
+}
 
 .dropbtn {
     font-size: 16px;
@@ -87,15 +94,13 @@ hr{
     transform: scale(1.025);
 }
 .content{
-    margin:2.5rem 40px;
-    
-     
-  
+    margin:2.5rem 40px; 
 }
 
 .content p{
     color:#fff;
     font-weight:300;
+    font-family: 'Roboto', sans-serif;
    
 }
 .content h1{
@@ -112,6 +117,11 @@ hr{
 a{
     text-decoration: none;
 }
+.news h4{
+    color:grey;
+    font-size:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .right img{
     width:150px;
@@ -119,8 +129,80 @@ a{
 }
 .topic{
     display:flex;
+    justify-content: space-between;
+    margin:4rem 1.5rem 40px 40px;
+}
+.topic-title{
+    float:left;
+}
+.button{
+    float:right;
+    text-align: center;
+    justify-content: center;
+    background-color:darkorange;
+    border-radius:5px;
+    font-weight:400;
+    font-size:20px;
+    padding:5px 10px;
+}
+.button:hover{
+    transform: scale(1.2);
+}
+.xyz{
+    background-color:aliceblue;
+}
+.highlight{
+    margin:2.5rem 40px;
+}
+.affairs{
+    padding:10px 5px;
 }
 
+.affairs img{
+    width:230px;
+    height:280px;
+}
+.affairs a{
+    color:#000;
+    
+}
+.affairs p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.affairs h6{
+    color:grey;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.affairs {
+    --g: 4px;     /* the gap */
+    --b: 5px;    /* border thickness*/
+    --c: #fa1919; /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+  }
+  .affairs:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+  .videos{
+    background-color: #fff;
+    margin:2.5rem 40px;
+  }
+  
 
 
  
