@@ -148,6 +148,9 @@ a{
     font-size:20px;
     padding:5px 10px;
 }
+.button a{
+    color:#fff;
+}
 .button:hover{
     transform: scale(1.2);
 }
@@ -180,21 +183,6 @@ a{
     letter-spacing: 2px;
 }
 .affairs {
-    --g: 4px;     /* the gap */
-    --b: 5px;    /* border thickness*/
-    --c: #fa1919; /* the color */
-    
-    
-    padding: calc(var(--g) + var(--b));
-    --_c: #0000 0 25%, var(--c) 0 50%;
-    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
-    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
-    background:
-      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
-      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
-    background-size: 200% var(--b),var(--b) 200%;
-    cursor: pointer;
-    filter: grayscale(50%);
     transition: .3s;
   }
 .affairs:hover {
@@ -370,9 +358,94 @@ a{
 
 
 
+/* For Desktop View*/
+@media screen and (min-width: 1024px){
 
- 
+
+}
 
 
 
- 
+/*For Tablet View*/
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px){
+
+
+}
+
+
+
+/* For Mobile View*/
+@media screen and (max-device-width: 480px)
+and (orientation: portrait){
+    .left .main-topic{
+        font-size:2rem;
+        font-family: monospace;
+    }
+    .item{
+        display:flex;
+        
+    }
+    .item img{
+        float:left;
+        padding-right:10px;
+    }
+
+   
+    .newsletter-content1{
+        padding:5px;
+        justify-content: space-between;
+    }
+    .newsletter-content1 h2{
+        font-size:1.2rem;
+        line-height:30px;
+    }
+    .newsletter-content1 p{
+        padding:5px;
+    }
+    .newsletter-content{
+        padding:5px;
+    }
+    
+    .newsletter-content input::placeholder{
+        font-size:14px;
+        word-spacing: -3.5px;
+    }
+    .newsletter-content a{
+        font-size:19px;
+        height:1.25rem;
+       
+    }
+    .now{
+        display: none;
+    }
+
+
+
+    .footer{
+         display:flex;
+         flex-direction: column;
+    }
+    .footer ul{
+        padding-bottom:8px;
+        padding-top:3px;
+    }
+    .footer ul li a{
+        font-size: 16px;
+    }
+    .brand p{
+       padding-bottom:10px;
+    }   
+    .brand a{
+        font-size:3rem;
+    }
+    .copyright p{
+        font-size:1rem;
+    }
+
+}
+
+@media screen and (max-device-width: 640px)
+and (orientation: landscape){
+    
+}
