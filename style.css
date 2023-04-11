@@ -360,30 +360,32 @@ a{
 
 /* For Desktop View*/
 @media screen and (min-width: 1024px){
-   /* .content{
+    
+    .content{
         display:grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 1fr;
-       
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-auto-flow: dense;
     }
-    .highlight{
-        grid-column:1/4;
-        
+    .left{
+        grid-column: span 3;
     }
-    .highlight p{
-        font-size:1.1rem;
-        color:darkgray;
-        
+    .content .news{
+        padding-bottom:15px;
     }
-    .highlight h1{
-        font-size:5rem
+    .content .news:hover{
+        transform: scale(1.015);
     }
-    .right{
-        grid-column: 4/6;
+    .item{
+        display:flex;
+        flex-direction:row;
     }
-*/
+    .main-topic{
+        font-size: 8rem;
+    }
+
+ 
     .news img{
-        width:200px;
+        width:300px;
         height:160px;
     }
     .affairs img{
