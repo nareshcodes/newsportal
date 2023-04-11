@@ -386,6 +386,31 @@ a{
         width:200px;
         height:160px;
     }
+    .recommended-videos{
+        display: flex;
+        flex-direction: row;
+    }
+    .videos1{
+        float:right;
+        padding-right:3.6rem;
+    }
+    .recommended-news a:hover{
+        transform: scale(1.015);
+    }
+    .videos1:hover{
+        transform: scale(1.015);
+    }
+    .recommended-videos p{
+        font-family: 'roboto';
+        color:#000;
+
+    }
+    .recommended-videos h5{
+        color:darkgray;
+        font-family:Arial, Helvetica, sans-serif;
+        
+    }
+   
    
 
 }
